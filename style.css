@@ -62,31 +62,37 @@ body {
   top: 5px;
 }
 
-.section-one {
+.section-one{
   display: flex;
-  width: 100%;
   justify-content: center;
+  
 }
+
+
+
 .section-content-intro {
-  margin-top: 30px;
+ min-width:1150px;
   color: #122c89;
-  width: 1000px;
+  margin: 30px 150px;
 }
+.section-content-intro h1,
+h2 {
+  margin-bottom: 30px;
+}
+
 .section-content-intro h2 {
   font-size: 45px;
-  margin-bottom: 20px;
 }
 
 .section-content-intro h1 {
   font-size: 110px;
   line-height: 110px;
-  margin-bottom: 30px;
 }
-.section-content-intro button {
+
+.btn-section-one button {
   width: 142px;
   height: 44px;
   font-size: 16px;
-
   border-radius: 50px;
   border: none;
   font-weight: 600;
@@ -94,39 +100,33 @@ body {
   box-shadow: 0 1.4px 5px #dbdbdb;
   background-color: #e4e4e4;
 }
-.section-content-intro :nth-child(3) {
+.btn-section-one :nth-child(1) {
   background-color: #122c89;
-
   color: #fff;
   transition: 0.3s;
+  margin-right: 10px;
 }
-.section-content-intro :nth-child(3):hover {
+.btn-section-one :nth-child(1):hover {
   background: #fff;
   color: #122c89;
   border: 2px solid #122c89;
   transform: scale(1.1);
 }
-.section-content-intro :nth-child(4) {
+.btn-section-one :nth-child(2) {
   transition: 0.3s;
-  margin-left: 20px;
-  width: 169px;
+  
 }
-.section-content-intro :nth-child(4):hover {
+.btn-section-one :nth-child(2):hover {
   background: #122c89;
   color: #fff;
 
   transform: scale(1.1);
 }
 
-.second-header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
 .second-header header nav {
   text-align: center;
-  margin: 30px 0;
+
   p {
     font-size: 11px;
     color: #464545;
@@ -141,15 +141,12 @@ body {
 .second-section .partner-img {
   margin-top: 30px;
   display: flex;
+  padding: 0 30px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.second-section-botom {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 .second-section-content {
   display: flex;
   margin-top: 50px;
@@ -217,19 +214,20 @@ body {
   flex-wrap: wrap;
   margin-bottom: 40px;
   align-items: center;
-  width: 100%;
-  justify-content: space-around;
-  height: 170px;
+ padding: 20px 200px;
+  justify-content: space-between;
+  min-height: 170px;
   background: #e6ecfb;
 }
 .thard-section-content-left {
+  
   h1 {
     font-size: 50px;
     color: #122c89;
   }
 }
 .thard-section-content-right {
-  width: 300px;
+ 
   button {
     width: 220px;
     height: 60px;
@@ -249,7 +247,8 @@ body {
 
 /*fourth section*/
 .fourth-section-title {
-  text-align: center;
+  text-align: center; 
+  padding: 0 30px;
   margin-bottom: 50px;
   h1 {
     font-size: 32px;
@@ -258,13 +257,13 @@ body {
 }
 
 .fourth-section-team {
-  width: 100%;
+ 
   display: flex;
   justify-content: center;
   position: relative;
 }
 .fourth-section-teams-detals {
-  width: 100%;
+  
   justify-content: center;
   padding: 0 40px;
   text-align: center;
@@ -354,16 +353,15 @@ body {
 
 .six-section {
   background-color: #f2f3ee;
-  margin: 20px 0;
-  padding: 30px;
+
+  padding: 30px 50px;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   p {
     text-align: center;
-
     font-size: 12px;
     letter-spacing: 1.5px;
     color: #464545;
@@ -376,8 +374,8 @@ body {
   gap: 25px;
 }
 .sic-content {
-  padding-right: 30px;
-  max-width: 880px;
+  padding: 30px 100px;
+
   margin-top: 50px;
 
   h2 {
@@ -566,73 +564,74 @@ footer {
     display: block;
   }
 
+  .menu ul {
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    left: 0;
+    /* top: 100px; */
+    gap: 20px;
+    top: -500%;
+    padding: 40px 0;
+    transition: ease-in-out 0.7s;
+  }
+
+  .section-content-intro {
+    min-width: 800px;
+  }
 
 
-.menu ul {
+  /*thard section*/
 
-  width: 100%;
-  position: absolute;
-  flex-direction: column;
-  background-color: #f3f3f3;
-  left: 0;
-  /* top: 100px; */
-  gap: 20px;
-  top: -500%;
-  padding: 40px 0;
-  transition: ease-in-out 0.7s;
-}
-
-.section-content-intro {
-  margin-left: 30px;
-}
-.section-content-intro h2 {
-  font-size: 35px;
-}
-
-.section-content-intro h1 {
-  font-size: 70px;
-  line-height: 70px;
-  margin-bottom: 30px;
-}
-
-/*thard section*/
-
-.thard-section-content {
-  height: 250px;
-}
-.thard-section-content-left {
+  .thard-section-content {
+    justify-content: center;
+  }
+  .thard-section-content-left h1,p  {
   text-align: center;
-}
-.thard-section-content-right {
-  margin-left: 80px;
-}
+ 
+  }
+ 
+  /* fourt section */
+  .fourth-section-teams-detals {
+    margin-bottom: 40px;
+  }
 
-/* fourt section */
-.fourth-section-teams-detals {
-  margin-bottom: 40px;
-}
+  .fourth-section-teams-detals :nth-child(5) {
+    display: none;
+  }
+  .fourth-section-teams-detals :nth-child(6) {
+    display: none;
+  }
 
-.fourth-section-teams-detals :nth-child(5) {
-  display: none;
+  .fourth-section-teams-detals button {
+    left: 59.5%;
+  }
+  footer .logo1 img {
+    width: 750px;
+  }
+  footer {
+    padding: 100px;
+  }
+  .footer-content {
+    gap: 100px;
+  }
 }
-.fourth-section-teams-detals :nth-child(6) {
-  display: none;
-}
+@media (width<835px) {
 
-.fourth-section-teams-detals button {
-  left: 59.5%;
-}
-footer .logo1 img {
-  width: 750px;
-}
-footer {
-  padding: 100px;
-}
-.footer-content {
-  gap: 100px;
-}
-}
-@media (width<820px) {
+    .section-content-intro h2 {
+    font-size: 35px;
+  }
+  .section-content-intro{
+    min-width:500px ;
+    padding: 20px 80px;
+  }
+
+  .section-content-intro h1 {
+    font-size: 70px;
+    line-height: 70px;
+   
+  }
   .fourth-section-teams-detals button {
     left: 36%;
   }
@@ -649,6 +648,27 @@ footer {
 }
 
 @media (width<600px) {
+
+    .section-content-intro h2 {
+    font-size: 25px;
+  }
+  .section-content-intro{
+    padding: 10px 70px;
+    min-width: 270px;
+  }
+
+  .section-content-intro h1 {
+    font-size: 50px;
+    line-height: 50px;
+   
+  }
+  .btn-section-one{
+  display: flex;
+ 
+  gap: 10px;
+ 
+  flex-direction: column;
+}
   .second-section-content-left {
     max-width: 300px;
   }
@@ -671,7 +691,9 @@ footer {
     font-size: 9px;
   }
   .sic-content h2 {
-    font-size: 20px;
+    font-size: 14px;
+    width: 180px;
+
   }
   .sic-content span {
     font-size: 9px;
@@ -692,12 +714,28 @@ footer {
     justify-content: start;
   }
   footer .logo1 img {
-    width: 400px;
+    width: 300px;
   }
   .footer-content,
   .footer-content1 {
     width: 100%;
     gap: 30px;
     flex-direction: column;
+  }
+}
+@media (width<420px){
+
+  footer .logo1 img{
+    width: 250px;
+  }
+
+  .fourth-section-teams-detals button {
+    left: 20%;
+  }
+  .six-section-content{
+    
+  
+    display: inline-block ;
+   
   }
 }
