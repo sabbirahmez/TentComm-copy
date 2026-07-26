@@ -722,8 +722,15 @@ footer {
     gap: 30px;
     flex-direction: column;
   }
+    body{
+    overflow: hidden;
+  }
+
 }
 @media (width<420px){
+  body{
+    overflow: hidden;
+  }
 
   footer .logo1 img{
     width: 250px;
